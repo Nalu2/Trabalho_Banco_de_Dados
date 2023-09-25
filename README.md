@@ -52,6 +52,33 @@ select pais, count(regiao) from tabela_paises group by pais
 ```
 ![image](https://github.com/Nalu2/Trabalho_Banco_de_Dados/assets/88158868/369abfbf-77bf-4700-ae7c-87ca616038b4)
 
+8. Selecione os países e quantas regiões cada país possui;
+```sql
+select pais, count(regiao) from tabela_paises group by pais
+```
+![image](https://github.com/Nalu2/Trabalho_Banco_de_Dados/assets/88158868/9c6b20c5-3d05-4c84-ba40-78a7fa7ee26d)
+
+9. Quantas pessoas com nome começando em 'João' existem no banco?
+```sql
+select nome from tabela_paises where nome like 'João%' group by nome;
+```
+![image](https://github.com/Nalu2/Trabalho_Banco_de_Dados/assets/88158868/50ce781d-f8a4-4b17-b01d-b14d80e339cf)
+
+
+10. Quantas pessoas têm o nome John?
+```sql
+select nome from tabela_paises where nome like 'John%' group by nome;
+```
+![image](https://github.com/Nalu2/Trabalho_Banco_de_Dados/assets/88158868/5b43e259-8601-46bb-a0bb-930715c84213)
+
+
+11. Ordene os nomes dos países sem repetição em ordem alfabética;
+```sql
+select distinct pais from tabela_paises order by pais asc;
+```
+![image](https://github.com/Nalu2/Trabalho_Banco_de_Dados/assets/88158868/89d3e488-b58f-4292-a83e-084073fb89ea)
+
+
 
 
 
